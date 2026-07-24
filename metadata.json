@@ -1,0 +1,6 @@
+{
+  "name": "Ronz FC",
+  "description": "The official landing page of Ronz FC, featuring a premium design, live match trackers, fixtures, player showcase, interactive rain-swept match-day simulator, and ticketing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
