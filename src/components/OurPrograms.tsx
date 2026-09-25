@@ -41,22 +41,22 @@ const PROGRAM_TABS: ProgramTab[] = [
       {
         title: 'Fundamental Ball Mastery',
         description: 'Building multi-directional dribbling agility, balance, bilateral foot coordination, and total confidence on the ball.',
-        icon: <Footprints className="w-7 h-7 text-[#E4187E]" strokeWidth={2.2} />
+        icon: <Footprints className="w-7 h-7 text-[#dc2626]" strokeWidth={2.2} />
       },
       {
         title: 'Small-Sided Matches (3v3 & 5v5)',
         description: 'Maximizing ball touches per minute and fostering early spatial awareness through rapid-play formats.',
-        icon: <Users className="w-7 h-7 text-[#E4187E]" strokeWidth={2.2} />
+        icon: <Users className="w-7 h-7 text-[#dc2626]" strokeWidth={2.2} />
       },
       {
         title: 'Positive Passion & Teamwork',
         description: 'Cultivating intrinsic love for the game, sportsmanship, communication, and collaborative spirit.',
-        icon: <Sparkles className="w-7 h-7 text-[#E4187E]" strokeWidth={2.2} />
+        icon: <Sparkles className="w-7 h-7 text-[#dc2626]" strokeWidth={2.2} />
       },
       {
         title: 'Interactive Skill Challenges',
         description: 'Engaging weekly target drills, agility obstacle courses, and technical achievement milestones.',
-        icon: <Award className="w-7 h-7 text-[#E4187E]" strokeWidth={2.2} />
+        icon: <Award className="w-7 h-7 text-[#dc2626]" strokeWidth={2.2} />
       }
     ]
   },
@@ -70,22 +70,22 @@ const PROGRAM_TABS: ProgramTab[] = [
       {
         title: '11-a-Side Tactical Systems',
         description: 'Mastering spatial geometry, pressing triggers, building out from the back, and transition phases.',
-        icon: <Target className="w-7 h-7 text-[#E4187E]" strokeWidth={2.2} />
+        icon: <Target className="w-7 h-7 text-[#dc2626]" strokeWidth={2.2} />
       },
       {
         title: 'Positional Specialization',
         description: 'Role-specific tactical intelligence for defenders, midfielders, wingers, and strikers.',
-        icon: <Zap className="w-7 h-7 text-[#E4187E]" strokeWidth={2.2} />
+        icon: <Zap className="w-7 h-7 text-[#dc2626]" strokeWidth={2.2} />
       },
       {
         title: 'Athletic Strength & Conditioning',
         description: 'Specialized fitness regimes, speed endurance, core stability, and movement efficiency.',
-        icon: <Dumbbell className="w-7 h-7 text-[#E4187E]" strokeWidth={2.2} />
+        icon: <Dumbbell className="w-7 h-7 text-[#dc2626]" strokeWidth={2.2} />
       },
       {
         title: 'Game Intelligence & Decision Making',
         description: 'Developing rapid perception-action loops to make split-second tactical decisions under match intensity.',
-        icon: <Activity className="w-7 h-7 text-[#E4187E]" strokeWidth={2.2} />
+        icon: <Activity className="w-7 h-7 text-[#dc2626]" strokeWidth={2.2} />
       }
     ]
   },
@@ -99,22 +99,22 @@ const PROGRAM_TABS: ProgramTab[] = [
       {
         title: 'Pro Trials & Scout Showcase',
         description: 'Direct pathway exposure to professional club scouts, trial opportunities, and showcase fixtures.',
-        icon: <Trophy className="w-7 h-7 text-[#E4187E]" strokeWidth={2.2} />
+        icon: <Trophy className="w-7 h-7 text-[#dc2626]" strokeWidth={2.2} />
       },
       {
         title: 'Video Analysis & Performance Metrics',
         description: 'In-depth match film review, opponent scouting reports, GPS tracking, and personalized feedback.',
-        icon: <Video className="w-7 h-7 text-[#E4187E]" strokeWidth={2.2} />
+        icon: <Video className="w-7 h-7 text-[#dc2626]" strokeWidth={2.2} />
       },
       {
         title: 'High-Intensity Tactical Drills',
         description: 'Professional match simulation, set-piece routines, counter-pressing, and high-tempo game execution.',
-        icon: <Shield className="w-7 h-7 text-[#E4187E]" strokeWidth={2.2} />
+        icon: <Shield className="w-7 h-7 text-[#dc2626]" strokeWidth={2.2} />
       },
       {
         title: 'Mental Fortitude & Composure',
         description: 'High-stakes trial preparation, resilience under pressure, unshakeable focus, and leadership skills.',
-        icon: <Brain className="w-7 h-7 text-[#E4187E]" strokeWidth={2.2} />
+        icon: <Brain className="w-7 h-7 text-[#dc2626]" strokeWidth={2.2} />
       }
     ]
   }
@@ -131,10 +131,10 @@ export default function OurPrograms() {
   const activeTab = PROGRAM_TABS.find((t) => t.id === activeTabId) || PROGRAM_TABS[0];
 
   return (
-    <section id="our-programs" className="relative bg-[#e9e9e9] text-slate-900 pt-16 sm:pt-20 pb-4 sm:pb-6 px-4 sm:px-8 lg:px-16 overflow-hidden">
+    <section id="our-programs" className="relative bg-white text-slate-900 pt-16 sm:pt-20 pb-4 sm:pb-6 px-4 sm:px-8 lg:px-16 overflow-hidden">
       
       {/* Background Subtle Accent Gradients */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#E4187E]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2" />
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#dc2626]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-slate-400/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -150,7 +150,7 @@ export default function OurPrograms() {
           >
             Our Programs
           </motion.h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-[#E4187E] via-slate-800 to-slate-950 rounded-full mx-auto my-4" />
+          <div className="w-16 h-1 bg-gradient-to-r from-[#dc2626] via-slate-800 to-slate-950 rounded-full mx-auto my-4" />
           <p className="text-xs sm:text-sm md:text-base font-medium text-slate-700 font-sans max-w-2xl mx-auto">
             Structured development stages engineered to nurture talent from initial grassroots enthusiasm to high-performance professional competition.
           </p>
@@ -182,7 +182,7 @@ export default function OurPrograms() {
                     )}
 
                     <div className="relative z-10 flex items-center justify-between w-full mb-0.5">
-                      <span className={`text-[9px] sm:text-[10px] font-mono font-bold tracking-widest uppercase ${isActive ? 'text-[#E4187E]' : 'text-slate-600 group-hover:text-slate-900'}`}>
+                      <span className={`text-[9px] sm:text-[10px] font-mono font-bold tracking-widest uppercase ${isActive ? 'text-[#dc2626]' : 'text-slate-600 group-hover:text-slate-900'}`}>
                         {tab.badge}
                       </span>
                       <span className={`text-[9px] font-mono font-semibold px-2 py-0.5 rounded-full ${isActive ? 'bg-white/10 text-slate-300' : 'bg-slate-900/5 text-slate-600'}`}>
@@ -209,9 +209,9 @@ export default function OurPrograms() {
                 className="space-y-8 pt-2"
               >
                 {/* Active Subtitle / Phase Tagline sitting directly on page background */}
-                <div className="relative pl-4 border-l-2 border-[#E4187E] space-y-1">
+                <div className="relative pl-4 border-l-2 border-[#dc2626] space-y-1">
                   <div className="flex items-center gap-2">
-                    <span className="text-[11px] font-mono font-bold tracking-widest text-[#E4187E] uppercase">{activeTab.badge}</span>
+                    <span className="text-[11px] font-mono font-bold tracking-widest text-[#dc2626] uppercase">{activeTab.badge}</span>
                     <span className="text-slate-400 text-[10px]">•</span>
                     <span className="text-[11px] font-mono font-bold text-slate-700 uppercase tracking-wider">{activeTab.ageGroup}</span>
                   </div>
@@ -235,7 +235,7 @@ export default function OurPrograms() {
                         {point.icon}
                       </div>
                       <div className="space-y-1">
-                        <h4 className="text-xs sm:text-sm font-bold text-slate-950 font-display tracking-tight group-hover:text-[#E4187E] transition-colors duration-200">
+                        <h4 className="text-xs sm:text-sm font-bold text-slate-950 font-display tracking-tight group-hover:text-[#dc2626] transition-colors duration-200">
                           {point.title}
                         </h4>
                         <p className="text-xs text-slate-700 font-sans leading-relaxed font-medium">
@@ -272,9 +272,9 @@ export default function OurPrograms() {
                       <rect width="400" height="400" fill="#0f172a" opacity="0.82" />
                     </pattern>
                     <linearGradient id="ringStrokeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#E4187E" />
+                      <stop offset="0%" stopColor="#dc2626" />
                       <stop offset="50%" stopColor="#0f172a" />
-                      <stop offset="100%" stopColor="#E4187E" />
+                      <stop offset="100%" stopColor="#dc2626" />
                     </linearGradient>
                   </defs>
 
@@ -289,11 +289,11 @@ export default function OurPrograms() {
                   />
 
                   {/* Inner sleek dashed pink ring stroke */}
-                  <circle cx="200" cy="200" r="125" fill="none" stroke="#E4187E" strokeWidth="2" strokeDasharray="6 4" opacity="0.85" />
+                  <circle cx="200" cy="200" r="125" fill="none" stroke="#dc2626" strokeWidth="2" strokeDasharray="6 4" opacity="0.85" />
                 </svg>
 
                 {/* Inner Center Hole explicitly matching #e9e9e9 section background with subtle inset border */}
-                <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full bg-[#e9e9e9] border border-slate-900/10 shadow-inner flex items-center justify-center pointer-events-none">
+                <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full bg-white border border-slate-900/10 shadow-inner flex items-center justify-center pointer-events-none">
                   <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full border border-slate-900/5" />
                 </div>
               </div>
@@ -359,7 +359,7 @@ export default function OurPrograms() {
                   <div className="w-2 h-0.5 bg-slate-900" />
                   <div className="w-1.5 h-0.5 bg-slate-700" />
                   <div className="w-1.5 h-0.5 bg-slate-700" />
-                  <div className="w-2 h-0.5 bg-[#E4187E]" />
+                  <div className="w-2 h-0.5 bg-[#dc2626]" />
                   <div className="w-1.5 h-0.5 bg-slate-700" />
                   <div className="w-1.5 h-0.5 bg-slate-700" />
                   <div className="w-2 h-0.5 bg-slate-900" />

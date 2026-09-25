@@ -173,7 +173,7 @@ export default function StadiumExperience() {
           <span className="font-mono text-xs font-bold tracking-widest text-brand-red uppercase bg-brand-red/10 px-4 py-1.5 rounded-full border border-brand-red/20">
             THE OBSIDIAN CAVERN
           </span>
-          <h2 className="font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-white mt-4">
+          <h2 className="font-display text-4xl sm:text-5xl font-display font-black tracking-tight text-white mt-4">
             THE OBSIDIAN ARENA
           </h2>
           <p className="text-gray-400 mt-3 font-sans font-medium text-base">
@@ -201,7 +201,7 @@ export default function StadiumExperience() {
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="block font-display text-[12px] font-extrabold text-brand-gold tracking-widest leading-none">OBSIDIAN ARENA</span>
+                  <span className="block font-display text-[12px] font-black text-brand-gold tracking-widest leading-none">OBSIDIAN ARENA</span>
                   <span className="block text-[11px] text-gray-300 mt-1">Ronz County, Sector 9</span>
                 </div>
               </div>
@@ -327,7 +327,7 @@ export default function StadiumExperience() {
                       return (
                         <p
                           key={idx}
-                          className={`font-display font-extrabold transition-all duration-500 text-xs sm:text-sm tracking-wide ${
+                          className={`font-display font-black transition-all duration-500 text-xs sm:text-sm tracking-wide ${
                             isActive
                               ? 'text-white scale-103 glow-red'
                               : 'text-gray-600 scale-95 opacity-55'

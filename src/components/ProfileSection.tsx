@@ -13,7 +13,7 @@ export interface InfoItem {
 }
 
 export interface SocialItem {
-  platform: 'facebook' | 'instagram' | 'x' | 'youtube' | 'tiktok' | string;
+  platform: 'facebook' | 'instagram' | 'gmail' | 'whatsapp' | string;
   url: string;
 }
 
@@ -49,11 +49,10 @@ const DEFAULT_INFO: InfoItem[] = [
 ];
 
 const DEFAULT_SOCIALS: SocialItem[] = [
-  { platform: 'facebook', url: '#' },
+  { platform: 'whatsapp', url: 'https://wa.me/918142001400' },
+  { platform: 'gmail', url: 'mailto:contact@ronzfc.com' },
   { platform: 'instagram', url: '#' },
-  { platform: 'x', url: '#' },
-  { platform: 'youtube', url: '#' },
-  { platform: 'tiktok', url: '#' },
+  { platform: 'facebook', url: '#' },
 ];
 
 export function ProfileSection({
@@ -74,7 +73,7 @@ export function ProfileSection({
   return (
     <section
       id="profile-section"
-      className="relative w-full bg-[#e9e9e9] pt-12 sm:pt-16 lg:pt-20 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="relative w-full bg-white pt-12 sm:pt-16 lg:pt-20 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
       {/* Hidden SVG Definition for Smooth Rounded Steep Diagonal Card ClipPath */}
       <svg width="0" height="0" className="absolute w-0 h-0 pointer-events-none" aria-hidden="true">
@@ -93,13 +92,13 @@ export function ProfileSection({
         transition={{ duration: 0.5, ease: 'easeOut' }}
         className="max-w-6xl mx-auto mb-8 sm:mb-10 text-center flex flex-col items-center"
       >
-        <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight font-sans">
-          The Ron in Ron FC
+        <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black font-display text-slate-900 tracking-tight">
+          Meet the Head Coach
         </h2>
         <p className="text-slate-600 text-xs sm:text-sm font-medium max-w-md mt-2">
-          Meet the star midfielder driving our midfield engine, playmaking precision, and team spirit.
+          The visionary driving our tactics, player development, and relentless winning mentality.
         </p>
-        <div className="w-16 h-0.5 bg-gradient-to-r from-[#E4187E] to-[#A01157] rounded-full mt-3 shadow-xs" />
+        <div className="w-16 h-0.5 bg-gradient-to-r from-[#dc2626] to-[#dc2626] rounded-full mt-3 shadow-xs" />
       </motion.div>
 
       {/* Floating Card Outer Container with Slimmer & Sleeker Bounds */}
@@ -109,7 +108,7 @@ export function ProfileSection({
         <div
           className="relative w-full text-white pt-6 sm:pt-8 lg:pt-9 pb-20 sm:pb-24 lg:pb-28 font-sans select-none min-h-[500px] sm:min-h-[550px] lg:min-h-[580px] overflow-hidden border border-white/20 rounded-3xl shadow-2xl"
           style={{
-            background: 'radial-gradient(circle at 75% 25%, #E4187E 0%, #900C4C 45%, #4A0627 80%, #200311 100%)',
+            background: 'radial-gradient(circle at 75% 25%, #dc2626 0%, #dc2626 45%, #4A0627 80%, #200311 100%)',
             clipPath: 'url(#diagonalCardClip)',
             WebkitClipPath: 'url(#diagonalCardClip)',
           }}
@@ -218,7 +217,7 @@ export function ProfileSection({
               </div>
 
               {/* Social Icons Pill Card (White Floating Card on Bottom Left) */}
-              <div className="mt-5 lg:mt-7 inline-flex items-center gap-2.5 sm:gap-3 bg-white/95 backdrop-blur-md text-slate-900 rounded-xl sm:rounded-2xl px-4 py-2 shadow-xl border border-white/60 hover:bg-white transition-all">
+              <div className="mt-5 lg:mt-7 inline-flex items-center gap-3 sm:gap-4 bg-white/95 backdrop-blur-md text-slate-900 rounded-xl sm:rounded-2xl px-5 py-3 shadow-xl border border-white/60 hover:bg-white transition-all">
                 {socials.map((s) => {
                   const platform = s.platform.toLowerCase();
                   return (
@@ -228,31 +227,37 @@ export function ProfileSection({
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Visit ${s.platform}`}
-                      className="w-7 h-7 rounded-full flex items-center justify-center transition-transform hover:scale-110 active:scale-95 cursor-pointer shadow-xs"
+                      className="transition-transform hover:scale-110 active:scale-95 cursor-pointer flex items-center justify-center rounded-full"
                     >
-                      {platform === 'facebook' && (
-                        <div className="w-7 h-7 rounded-full bg-[#1877F2] text-white flex items-center justify-center font-bold text-xs shadow-xs">
-                          f
+                      {platform === 'whatsapp' && (
+                        <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#25D366] to-[#128C7E] flex items-center justify-center shadow-[0_2px_8px_rgba(37,211,102,0.4)]">
+                          <svg viewBox="0 0 24 24" className="w-4.5 h-4.5 fill-white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01h-.57c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                          </svg>
+                        </div>
+                      )}
+                      {platform === 'gmail' && (
+                        <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center p-[5px] shadow-[0_2px_8px_rgba(234,67,53,0.3)] border border-slate-100">
+                          <svg viewBox="0 0 24 24" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#EA4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                            <path fill="#34A853" d="M24 5.457v6.273L12 16.64 0 11.73V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" opacity=".2"/>
+                            <path fill="#4285F4" d="M22.364 21.002h1.636V5.457c0-2.023-2.309-3.178-3.927-1.964L24 5.457v15.545z"/>
+                            <path fill="#FBBC05" d="M0 5.457v15.545h1.636v-9.273L0 11.73V5.457z"/>
+                          </svg>
                         </div>
                       )}
                       {platform === 'instagram' && (
-                        <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-[#FFDC80] via-[#FD1D1D] to-[#833AB4] text-white flex items-center justify-center text-[10px] font-bold shadow-xs">
-                          📸
+                        <div className="w-8 h-8 rounded-full flex items-center justify-center shadow-[0_2px_8px_rgba(193,53,132,0.4)] relative overflow-hidden" style={{ background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)' }}>
+                          <svg viewBox="0 0 24 24" className="w-4.5 h-4.5 fill-white relative z-10" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm3.98-10.405a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z" />
+                          </svg>
                         </div>
                       )}
-                      {platform === 'x' && (
-                        <div className="w-7 h-7 rounded-full bg-black text-white flex items-center justify-center font-bold text-[10px] shadow-xs">
-                          𝕏
-                        </div>
-                      )}
-                      {platform === 'youtube' && (
-                        <div className="w-7 h-7 rounded-full bg-[#FF0000] text-white flex items-center justify-center text-[10px] font-bold shadow-xs">
-                          ▶
-                        </div>
-                      )}
-                      {platform === 'tiktok' && (
-                        <div className="w-7 h-7 rounded-full bg-black text-white flex items-center justify-center text-[10px] font-bold shadow-xs">
-                          🎵
+                      {platform === 'facebook' && (
+                        <div className="w-8 h-8 rounded-full bg-[#1877F2] flex items-center justify-center shadow-[0_2px_8px_rgba(24,119,242,0.4)]">
+                          <svg viewBox="0 0 24 24" className="w-4.5 h-4.5 fill-white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                          </svg>
                         </div>
                       )}
                     </a>

@@ -72,10 +72,10 @@ export function MatchHistoryTimeline() {
         >
           <div>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/5 text-slate-800 text-xs font-mono font-bold tracking-wider uppercase mb-3 border border-slate-900/10 shadow-xs">
-              <Clock className="w-3.5 h-3.5 text-[#E4187E]" />
+              <Clock className="w-3.5 h-3.5 text-[#dc2626]" />
               ACADEMY TRAINING SCHEDULE
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight font-display">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-slate-900 tracking-tight font-display">
               Batches & Timings
             </h2>
             <p className="text-slate-600 text-sm sm:text-base font-normal max-w-xl mt-2 font-sans">
@@ -117,7 +117,7 @@ export function MatchHistoryTimeline() {
               
               {/* Floating Sleek Glass Badge */}
               <div className="absolute bottom-6 left-2 sm:left-4 bg-white/90 backdrop-blur-md px-4 py-3 rounded-2xl shadow-xl border border-white/60 flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#E4187E] to-[#A01157] text-white flex items-center justify-center font-bold shadow-md">
+                <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#dc2626] to-[#dc2626] text-white flex items-center justify-center font-bold shadow-md">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
@@ -152,11 +152,11 @@ export function MatchHistoryTimeline() {
                     <div
                       className={`shrink-0 flex flex-col items-center justify-center w-[108px] sm:w-[130px] h-[108px] sm:h-[130px] rounded-3xl transition-all duration-300 p-2 text-center border shadow-sm ${
                         isActive
-                          ? 'bg-white border-[#E4187E]/30 shadow-xl scale-105 ring-4 ring-[#E4187E]/10'
+                          ? 'bg-white border-[#dc2626]/30 shadow-xl scale-105 ring-4 ring-[#dc2626]/10'
                           : 'bg-white/80 border-slate-200/90 group-hover:bg-white group-hover:shadow-md'
                       }`}
                     >
-                      <div className="mb-1 p-2 rounded-full bg-slate-100 text-slate-700 group-hover:bg-[#E4187E]/10 group-hover:text-[#E4187E] transition-colors">
+                      <div className="mb-1 p-2 rounded-full bg-slate-100 text-slate-700 group-hover:bg-[#dc2626]/10 group-hover:text-[#dc2626] transition-colors">
                         {item.batchType === 'morning' ? (
                           <Sun className="w-5 h-5 text-amber-500" />
                         ) : (
@@ -176,7 +176,7 @@ export function MatchHistoryTimeline() {
                       <div
                         className={`w-4 h-4 rounded-full transition-all duration-300 ${
                           isActive
-                            ? 'bg-[#E4187E] ring-4 ring-[#E4187E]/20 scale-125'
+                            ? 'bg-[#dc2626] ring-4 ring-[#dc2626]/20 scale-125'
                             : 'bg-slate-300 group-hover:bg-slate-500'
                         }`}
                       />
@@ -186,7 +186,7 @@ export function MatchHistoryTimeline() {
                     <div className="flex-1 pt-2 sm:pt-4 pl-2 sm:pl-4">
                       {/* Timing Header */}
                       <div className="flex flex-wrap items-baseline gap-3">
-                        <h3 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight font-display">
+                        <h3 className="text-2xl sm:text-4xl font-display font-black text-slate-900 tracking-tight font-display">
                           {item.timeDisplay}
                         </h3>
                         <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-200/80 text-slate-700 font-sans">

@@ -35,7 +35,7 @@ export default function Newsletter() {
           <span className="font-mono text-[10px] font-bold text-brand-gold tracking-widest uppercase">RONZ MEMBERSHIP CLUB</span>
         </div>
 
-        <h2 className="font-display text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+        <h2 className="font-display text-3xl sm:text-5xl font-display font-black text-white tracking-tight leading-tight">
           RISE WITH THE STORM
         </h2>
         

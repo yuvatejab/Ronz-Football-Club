@@ -77,19 +77,19 @@ export function PhotoGallery() {
   const photoHeight = isMobile ? 190 : 290;
 
   return (
-    <section id="gallery-section" className="pt-4 pb-14 my-2 relative overflow-hidden bg-[#e9e9e9]">
+    <section id="gallery-section" className="pt-4 pb-14 my-2 relative overflow-hidden bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
-          <p className="text-xs font-mono font-bold uppercase tracking-[0.25em] text-[#E4187E] mb-2">
+          <p className="text-xs font-mono font-bold uppercase tracking-[0.25em] text-[#dc2626] mb-2">
             A Journey Through Visual Stories
           </p>
           
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-display text-slate-950 tracking-tight">
-            Welcome to Our <span className="text-[#E4187E]">Stories</span>
+            Welcome to Our <span className="text-[#dc2626]">Stories</span>
           </h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-[#E4187E] via-slate-800 to-slate-950 rounded-full mx-auto my-4" />
+          <div className="w-16 h-1 bg-gradient-to-r from-[#dc2626] via-slate-800 to-slate-950 rounded-full mx-auto my-4" />
         </div>
 
         {/* Subtle Overlapping Photo Card Stack */}
@@ -141,7 +141,7 @@ export function PhotoGallery() {
               setIsOpenedFromGrid(true);
               setShowModal(true);
             }}
-            className="group inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-slate-950 hover:bg-[#E4187E] text-white font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-xl hover:shadow-2xl active:scale-95 cursor-pointer"
+            className="group inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-slate-950 hover:bg-[#dc2626] text-white font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-xl hover:shadow-2xl active:scale-95 cursor-pointer"
           >
             <Grid className="w-4 h-4 text-white/80 group-hover:text-white" />
             <span>Show More ({GALLERY_ITEMS.length} Photos)</span>
@@ -246,7 +246,7 @@ export function PhotoGallery() {
               />
 
               <div className="mt-3.5 text-center">
-                <span className="font-mono text-xs sm:text-sm font-bold text-[#E4187E] uppercase tracking-widest bg-slate-900/10 px-3.5 py-1 rounded-full border border-slate-900/10">
+                <span className="font-mono text-xs sm:text-sm font-bold text-[#dc2626] uppercase tracking-widest bg-slate-900/10 px-3.5 py-1 rounded-full border border-slate-900/10">
                   PHOTO {selectedIndex + 1} OF {GALLERY_ITEMS.length}
                 </span>
               </div>

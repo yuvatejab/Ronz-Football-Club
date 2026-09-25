@@ -71,7 +71,7 @@ export default function VideoBanner() {
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#e9e9e9] py-0">
+    <section className="relative w-full overflow-hidden bg-white py-0">
       {/* Full-width Edge-to-Edge Container without horizontal padding */}
       <motion.div 
         initial={{ opacity: 0 }}
@@ -114,8 +114,8 @@ export default function VideoBanner() {
         <div className="absolute inset-0 bg-black/20 pointer-events-none" />
 
         {/* Sleek Metallic & Brand Pink Top & Bottom Border Accent */}
-        <div className="absolute top-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-[#E4187E] to-transparent pointer-events-none" />
-        <div className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-[#E4187E] to-transparent pointer-events-none" />
+        <div className="absolute top-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-[#dc2626] to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-[#dc2626] to-transparent pointer-events-none" />
 
         {/* Controls Overlay */}
         <div className="absolute top-4 right-4 sm:top-6 sm:right-8 z-30 flex items-center gap-2">
@@ -124,7 +124,7 @@ export default function VideoBanner() {
             title={isMuted ? 'Unmute Video' : 'Mute Video'}
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-950/80 backdrop-blur-md border border-white/20 text-white text-xs font-mono font-medium hover:bg-slate-900 transition-all shadow-lg active:scale-95 cursor-pointer"
           >
-            {isMuted ? <VolumeX className="w-3.5 h-3.5 text-[#E4187E]" /> : <Volume2 className="w-3.5 h-3.5 text-[#E4187E]" />}
+            {isMuted ? <VolumeX className="w-3.5 h-3.5 text-[#dc2626]" /> : <Volume2 className="w-3.5 h-3.5 text-[#dc2626]" />}
             <span>{isMuted ? 'Muted' : 'Sound On'}</span>
           </button>
           
@@ -133,7 +133,7 @@ export default function VideoBanner() {
             title="Rotate Video"
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-950/80 backdrop-blur-md border border-white/20 text-white text-xs font-mono font-medium hover:bg-slate-900 transition-all shadow-lg active:scale-95 cursor-pointer"
           >
-            <RotateCw className="w-3.5 h-3.5 text-[#E4187E]" />
+            <RotateCw className="w-3.5 h-3.5 text-[#dc2626]" />
             <span>Rotate ({rotation}°)</span>
           </button>
         </div>
@@ -141,7 +141,7 @@ export default function VideoBanner() {
         {!isPlaying && (
           <button
             onClick={togglePlay}
-            className="absolute z-20 w-16 h-16 rounded-full bg-[#E4187E]/90 hover:bg-[#E4187E] text-white flex items-center justify-center shadow-2xl backdrop-blur-sm border border-white/30 transition-transform transform hover:scale-110 active:scale-95 cursor-pointer"
+            className="absolute z-20 w-16 h-16 rounded-full bg-[#dc2626]/90 hover:bg-[#dc2626] text-white flex items-center justify-center shadow-2xl backdrop-blur-sm border border-white/30 transition-transform transform hover:scale-110 active:scale-95 cursor-pointer"
             aria-label="Play Video"
           >
             <Play className="w-8 h-8 fill-white translate-x-0.5" />
@@ -166,7 +166,7 @@ export default function VideoBanner() {
             whileInView={{ width: '120px' }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="h-1 bg-[#E4187E] rounded-full shadow-[0_0_20px_#E4187E]"
+            className="h-1 bg-[#dc2626] rounded-full shadow-[0_0_20px_#dc2626]"
           />
         </div>
 

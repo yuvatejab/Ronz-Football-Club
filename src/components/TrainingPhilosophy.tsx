@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Target, Zap, Shield, ChevronRight } from 'lucide-react';
+import { Zap, Grid3X3, Flame, Brain } from 'lucide-react';
 
 export default function TrainingPhilosophy() {
   const pillars = [
@@ -8,67 +8,30 @@ export default function TrainingPhilosophy() {
       id: 'technical',
       title: 'Technical Excellence',
       description: 'Mastering ball control, passing accuracy, and finishing under pressure.',
-      icon: (
-        <svg className="w-12 h-12 text-[#E4187E]" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          {/* Custom football ball & target precision vector */}
-          <circle cx="32" cy="32" r="22" />
-          <polygon points="32,20 39,26 36,35 28,35 25,26" />
-          <line x1="32" y1="10" x2="32" y2="20" />
-          <line x1="39" y1="26" x2="50" y2="22" />
-          <line x1="36" y1="35" x2="44" y2="46" />
-          <line x1="28" y1="35" x2="20" y2="46" />
-          <line x1="25" y1="26" x2="14" y2="22" />
-        </svg>
-      )
+      icon: <Zap className="w-12 h-12 text-[#dc2626]" strokeWidth={1.5} />
     },
     {
       id: 'tactical',
       title: 'Tactical Awareness',
       description: 'Understanding positioning, spatial transitions, and game intelligence.',
-      icon: (
-        <svg className="w-12 h-12 text-[#E4187E]" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          {/* Custom tactical board vector */}
-          <rect x="10" y="10" width="44" height="44" rx="6" />
-          <line x1="32" y1="10" x2="32" y2="54" />
-          <circle cx="32" cy="32" r="8" />
-          <circle cx="21" cy="22" r="3" fill="currentColor" />
-          <circle cx="43" cy="42" r="3" fill="currentColor" />
-          <path d="M21 22Q32 18 43 42" strokeDasharray="3 3" />
-        </svg>
-      )
+      icon: <Grid3X3 className="w-12 h-12 text-[#dc2626]" strokeWidth={1.5} />
     },
     {
       id: 'physical',
       title: 'Physical Conditioning',
       description: 'Specialized drills for speed, agility, and core strength to prevent injury and boost endurance.',
-      icon: (
-        <svg className="w-12 h-12 text-[#E4187E]" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          {/* Custom runner athletic power vector */}
-          <circle cx="36" cy="14" r="5" fill="currentColor" />
-          <path d="M18 48l12-14 6 6 12-16" />
-          <path d="M30 34l-8 16" />
-          <path d="M22 28l12-6 10 8" />
-          <path d="M44 30l6 14" />
-        </svg>
-      )
+      icon: <Flame className="w-12 h-12 text-[#dc2626]" strokeWidth={1.5} />
     },
     {
       id: 'mental',
       title: 'Mental Fortitude',
       description: 'Building the confidence, discipline, and leadership required for high-stakes competition.',
-      icon: (
-        <svg className="w-12 h-12 text-[#E4187E]" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          {/* Custom shield with crown/mind focus vector */}
-          <path d="M32 10L14 18v16c0 14 18 22 18 22s18-8 18-22V18L32 10z" />
-          <path d="M24 28l8-6 8 6-3 10H27l-3-10z" />
-          <circle cx="32" cy="36" r="2" fill="currentColor" />
-        </svg>
-      )
+      icon: <Brain className="w-12 h-12 text-[#dc2626]" strokeWidth={1.5} />
     }
   ];
 
   return (
-    <section id="training-philosophy" className="relative bg-[#e9e9e9] text-slate-900 py-16 sm:py-20 md:py-24 px-6 sm:px-12 lg:px-20 overflow-hidden font-serif">
+    <section id="training-philosophy" className="relative bg-white text-slate-900 py-16 sm:py-20 md:py-24 px-6 sm:px-12 lg:px-20 overflow-hidden font-serif">
       
       {/* Background Radial Sunburst Watermark Effect on Left */}
       <div className="absolute top-0 left-0 w-80 sm:w-[480px] h-80 sm:h-[480px] pointer-events-none opacity-20 -translate-x-12 -translate-y-12">
@@ -95,7 +58,7 @@ export default function TrainingPhilosophy() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-slate-900 leading-[1.15] tracking-tight max-w-lg"
+              className="text-3xl sm:text-4xl md:text-5xl font-black font-display text-slate-900 leading-[1.15] tracking-tight max-w-lg"
             >
               The Academy: Training Philosophy
             </motion.h2>
@@ -121,9 +84,9 @@ export default function TrainingPhilosophy() {
             >
               <a 
                 href="#profile-section"
-                className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold font-sans text-slate-900 hover:text-[#E4187E] transition-colors group cursor-pointer"
+                className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold font-sans text-slate-900 hover:text-[#dc2626] transition-colors group cursor-pointer"
               >
-                <span className="w-2 h-2 rounded-full bg-[#E4187E] inline-block" />
+                <span className="w-2 h-2 rounded-full bg-[#dc2626] inline-block" />
                 <span>Learn More</span>
               </a>
             </motion.div>
@@ -143,12 +106,12 @@ export default function TrainingPhilosophy() {
               className="flex flex-col items-start space-y-3"
             >
               {/* Red Line-Art Icon */}
-              <div className="mb-2 text-[#E4187E]">
+              <div className="mb-2 text-[#dc2626]">
                 {pillar.icon}
               </div>
 
               {/* Pillar Title */}
-              <h3 className="text-lg sm:text-xl font-bold font-serif text-slate-900 tracking-tight">
+              <h3 className="text-lg sm:text-xl font-black font-display text-slate-900 tracking-tight">
                 {pillar.title}
               </h3>
 

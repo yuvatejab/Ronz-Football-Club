@@ -96,7 +96,15 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
           </nav>
 
           {/* Minimalist Action CTA */}
-          <div id="nav-cta-container" className="hidden md:flex items-center">
+          <div id="nav-cta-container" className="hidden md:flex items-center gap-3">
+            <button
+              onClick={() => window.location.hash = '#admin'}
+              className={`flex items-center gap-1.5 rounded-full bg-white/5 hover:bg-white/10 text-white text-[10px] font-mono tracking-widest border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer ${
+                isScrolled ? 'px-3.5 py-1.5' : 'px-4 py-2 rounded-lg'
+              }`}
+            >
+              <span>ADMIN</span>
+            </button>
             <button
               id="cta-ticket-button"
               onClick={() => handleItemClick('profile-section')}
@@ -159,6 +167,16 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
               >
                 <span>VISIT PROFILE</span>
                 <ArrowUpRight className="w-4 h-4 text-gray-400" />
+              </button>
+
+              <button
+                onClick={() => {
+                  window.location.hash = '#admin';
+                  setMobileMenuOpen(false);
+                }}
+                className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-mono text-xs tracking-wider mt-2 transition-all duration-300"
+              >
+                <span>OPEN ADMIN PANEL</span>
               </button>
             </div>
           </motion.div>

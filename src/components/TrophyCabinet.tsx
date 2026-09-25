@@ -59,7 +59,7 @@ export default function TrophyCabinet() {
           <span className="font-mono text-xs font-bold tracking-widest text-brand-red uppercase bg-brand-red/10 px-4 py-1.5 rounded-full border border-brand-red/20">
             CHAMPIONS ARCHIVE
           </span>
-          <h2 className="font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-white mt-4">
+          <h2 className="font-display text-4xl sm:text-5xl font-display font-black tracking-tight text-white mt-4">
             A COATED LEGACY
           </h2>
           <p className="text-gray-400 mt-3 font-sans font-medium text-base">
@@ -87,7 +87,7 @@ export default function TrophyCabinet() {
                   
                   {/* Year Tag badge */}
                   <div className="relative z-10 flex flex-col items-center justify-center min-w-[50px] h-11 rounded-xl bg-slate-900 border border-white/10 text-center shadow-md">
-                    <span className="font-display font-extrabold text-[12px] text-white tracking-tight leading-none">{item.year}</span>
+                    <span className="font-display font-black text-[12px] text-white tracking-tight leading-none">{item.year}</span>
                     <Star className="w-2.5 h-2.5 text-brand-gold mt-1 group-hover:rotate-45 transition-transform duration-300" />
                   </div>
 
@@ -164,7 +164,7 @@ export default function TrophyCabinet() {
                     <span className="font-mono text-[10px] font-bold text-brand-gold uppercase tracking-widest bg-brand-gold/10 px-2.5 py-1 rounded-md">
                       Official Title Trophy
                     </span>
-                    <h3 className="font-display text-2xl sm:text-3xl font-black text-white mt-2">
+                    <h3 className="font-display text-2xl sm:text-3xl font-display font-black text-white mt-2">
                       {activeTrophy.name}
                     </h3>
                   </div>
@@ -176,7 +176,7 @@ export default function TrophyCabinet() {
                   <div className="md:col-span-4 flex flex-col gap-4">
                     <div>
                       <span className="block font-mono text-[9px] text-gray-500 uppercase">CHAMPIONS COUNT</span>
-                      <span className="block font-display text-4xl font-extrabold text-white mt-1">{activeTrophy.count} Times</span>
+                      <span className="block font-display text-4xl font-black text-white mt-1">{activeTrophy.count} Times</span>
                     </div>
 
                     <div>

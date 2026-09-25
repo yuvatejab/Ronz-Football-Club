@@ -159,7 +159,7 @@ export function VideoText({
           height="280"
           mask={`url(#vmask-ui-${maskId})`}
         >
-          <div className="w-full h-full flex items-center justify-center bg-gradient-to-r from-[#E4187E] via-red-600 to-amber-500 overflow-hidden">
+          <div className="w-full h-full flex items-center justify-center bg-gradient-to-r from-[#dc2626] via-red-600 to-amber-500 overflow-hidden">
             <video
               ref={videoRef}
               autoPlay={autoPlay}

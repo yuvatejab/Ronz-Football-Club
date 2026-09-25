@@ -28,7 +28,7 @@ export default function LineupBuilder() {
           <span className="font-mono text-xs font-bold tracking-widest text-brand-red uppercase bg-brand-red/10 px-4 py-1.5 rounded-full border border-brand-red/20">
             TACTICAL ENGINE
           </span>
-          <h2 className="font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-white mt-4">
+          <h2 className="font-display text-4xl sm:text-5xl font-display font-black tracking-tight text-white mt-4">
             THE CRIMSON FORMATION
           </h2>
           <p className="text-gray-400 mt-4 text-base font-sans font-medium leading-relaxed">
@@ -164,7 +164,7 @@ export default function LineupBuilder() {
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover object-top scale-102 hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute bottom-0 left-0 bg-brand-red text-white text-[9px] font-extrabold px-1.5 py-0.5 rounded-tr-md font-mono">
+                    <div className="absolute bottom-0 left-0 bg-brand-red text-white text-[9px] font-black px-1.5 py-0.5 rounded-tr-md font-mono">
                       #{selectedPlayer.number}
                     </div>
                   </div>
@@ -187,28 +187,28 @@ export default function LineupBuilder() {
                 <div className="grid grid-cols-3 gap-2.5 bg-white/3 border border-white/5 rounded-2xl p-3.5 mb-6 text-center">
                   <div>
                     <span className="block font-mono text-[9px] text-gray-500 uppercase tracking-wider">Matches</span>
-                    <span className="block font-display text-lg font-extrabold text-white mt-0.5">{selectedPlayer.matches}</span>
+                    <span className="block font-display text-lg font-black text-white mt-0.5">{selectedPlayer.matches}</span>
                   </div>
                   {selectedPlayer.position === 'Goalkeeper' ? (
                     <>
                       <div>
                         <span className="block font-mono text-[9px] text-gray-500 uppercase tracking-wider">Clean Sheets</span>
-                        <span className="block font-display text-lg font-extrabold text-brand-gold mt-0.5">{selectedPlayer.cleanSheets || 18}</span>
+                        <span className="block font-display text-lg font-black text-brand-gold mt-0.5">{selectedPlayer.cleanSheets || 18}</span>
                       </div>
                       <div>
                         <span className="block font-mono text-[9px] text-gray-500 uppercase tracking-wider">Save Ratio</span>
-                        <span className="block font-display text-lg font-extrabold text-brand-red mt-0.5">92%</span>
+                        <span className="block font-display text-lg font-black text-brand-red mt-0.5">92%</span>
                       </div>
                     </>
                   ) : (
                     <>
                       <div>
                         <span className="block font-mono text-[9px] text-gray-500 uppercase tracking-wider">Goals</span>
-                        <span className="block font-display text-lg font-extrabold text-brand-red mt-0.5">{selectedPlayer.goals}</span>
+                        <span className="block font-display text-lg font-black text-brand-red mt-0.5">{selectedPlayer.goals}</span>
                       </div>
                       <div>
                         <span className="block font-mono text-[9px] text-gray-500 uppercase tracking-wider">Assists</span>
-                        <span className="block font-display text-lg font-extrabold text-brand-gold mt-0.5">{selectedPlayer.assists}</span>
+                        <span className="block font-display text-lg font-black text-brand-gold mt-0.5">{selectedPlayer.assists}</span>
                       </div>
                     </>
                   )}

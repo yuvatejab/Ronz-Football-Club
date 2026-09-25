@@ -1,13 +1,13 @@
 import React from 'react';
-import { Twitter, Github, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Instagram, Facebook, MapPin } from 'lucide-react';
 import { VideoText } from './ui/video-text';
 
 export function FooterSection() {
   return (
-    <footer className="w-full text-white font-sans relative overflow-hidden bg-[#e9e9e9]">
+    <footer className="w-full text-white font-sans relative overflow-hidden bg-white">
       {/* Bridging Header with Pitch Grass Background starting at top-[68%] */}
       <div className="relative w-full flex flex-col items-center justify-center select-none pointer-events-none px-4 pt-10 sm:pt-14">
-        
+
         {/* Clear Pitch Grass Background starting at top-[68%] */}
         <div className="absolute inset-x-0 bottom-0 top-[68%] z-0 pointer-events-none overflow-hidden border-t-2 border-white/30 shadow-lg">
           <img
@@ -52,14 +52,15 @@ export function FooterSection() {
 
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 relative z-20">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 items-start">
-          
+
           {/* Left Column: Address, System Status Pill, Socials */}
           <div className="md:col-span-5 space-y-6">
-            
+
             {/* Address */}
             <div className="text-neutral-200 text-xs sm:text-sm font-sans leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]">
-              <p>2261 Market Street #5039</p>
-              <p>San Francisco, CA 94114</p>
+              <p className="font-bold text-white mb-1.5 flex items-center gap-1.5"><MapPin className="w-4 h-4 text-[#dc2626]" /> Our Training Grounds</p>
+              <p>Nagaram • R.L Nagar • Rampally</p>
+              <p>Hyderabad, Telangana</p>
             </div>
 
             {/* Status Pill Badge */}
@@ -69,7 +70,7 @@ export function FooterSection() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                <span className="font-medium text-neutral-100">All systems normal</span>
+                <span className="font-medium text-neutral-100">Registrations Open</span>
               </div>
             </div>
 
@@ -77,25 +78,29 @@ export function FooterSection() {
             <div>
               <div className="flex items-center gap-3 pt-1">
                 <a
-                  href="#twitter"
-                  aria-label="Twitter"
-                  className="w-9 h-9 rounded-full bg-black/80 backdrop-blur-md border border-neutral-700/80 hover:border-neutral-500 hover:bg-black text-neutral-300 hover:text-white flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                  className="w-9 h-9 rounded-full bg-black/80 backdrop-blur-md border border-neutral-700/80 hover:border-[#dc2626] hover:bg-black text-neutral-300 hover:text-[#dc2626] flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md"
                 >
-                  <Twitter className="w-4 h-4" />
+                  <Instagram className="w-4 h-4" />
                 </a>
                 <a
-                  href="#github"
-                  aria-label="GitHub"
-                  className="w-9 h-9 rounded-full bg-black/80 backdrop-blur-md border border-neutral-700/80 hover:border-neutral-500 hover:bg-black text-neutral-300 hover:text-white flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                  className="w-9 h-9 rounded-full bg-black/80 backdrop-blur-md border border-neutral-700/80 hover:border-[#dc2626] hover:bg-black text-neutral-300 hover:text-[#dc2626] flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md"
                 >
-                  <Github className="w-4 h-4" />
+                  <Facebook className="w-4 h-4" />
                 </a>
                 <a
-                  href="#linkedin"
-                  aria-label="LinkedIn"
-                  className="w-9 h-9 rounded-full bg-black/80 backdrop-blur-md border border-neutral-700/80 hover:border-neutral-500 hover:bg-black text-neutral-300 hover:text-white flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md"
+                  href="mailto:contact@ronzfc.com"
+                  aria-label="Email"
+                  className="w-9 h-9 rounded-full bg-black/80 backdrop-blur-md border border-neutral-700/80 hover:border-[#dc2626] hover:bg-black text-neutral-300 hover:text-[#dc2626] flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md"
                 >
-                  <Linkedin className="w-4 h-4" />
+                  <Mail className="w-4 h-4" />
                 </a>
               </div>
               {/* Subtle Ground Shadow cast by Social Buttons onto the grass image */}
@@ -106,36 +111,31 @@ export function FooterSection() {
 
           {/* Right Columns: 4 Nav Link Columns */}
           <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-6 text-xs sm:text-sm">
-            
-            {/* Column 1: Documentation */}
+
+            {/* Column 1: Explore */}
             <div className="space-y-3.5">
               <h4 className="font-semibold text-white text-xs sm:text-sm tracking-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]">
-                Documentation
+                Explore
               </h4>
               <ul className="space-y-2.5 text-neutral-200 font-sans drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">
                 <li>
-                  <a href="#getting-started" className="hover:text-white transition-colors">
-                    Getting Started
+                  <a href="#squad" className="hover:text-[#dc2626] transition-colors">
+                    Our Teams
                   </a>
                 </li>
                 <li>
-                  <a href="#api-reference" className="hover:text-white transition-colors">
-                    API Reference
+                  <a href="#training" className="hover:text-[#dc2626] transition-colors">
+                    Training Programs
                   </a>
                 </li>
                 <li>
-                  <a href="#integrations" className="hover:text-white transition-colors">
-                    Integrations
+                  <a href="#stadium" className="hover:text-[#dc2626] transition-colors">
+                    Stadium Experience
                   </a>
                 </li>
                 <li>
-                  <a href="#examples" className="hover:text-white transition-colors">
-                    Examples
-                  </a>
-                </li>
-                <li>
-                  <a href="#sdks" className="hover:text-white transition-colors">
-                    SDKs
+                  <a href="#matches" className="hover:text-[#dc2626] transition-colors">
+                    Upcoming Matches
                   </a>
                 </li>
               </ul>
@@ -143,30 +143,30 @@ export function FooterSection() {
               <div className="w-full h-2 bg-black/70 blur-[4px] rounded-[100%] mt-3 pointer-events-none" />
             </div>
 
-            {/* Column 2: Resources */}
+            {/* Column 2: Club */}
             <div className="space-y-3.5">
               <h4 className="font-semibold text-white text-xs sm:text-sm tracking-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]">
-                Resources
+                Club
               </h4>
               <ul className="space-y-2.5 text-neutral-200 font-sans drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">
                 <li>
-                  <a href="#changelog" className="hover:text-white transition-colors">
-                    Changelog
+                  <a href="#news" className="hover:text-[#dc2626] transition-colors">
+                    Latest News
                   </a>
                 </li>
                 <li>
-                  <a href="#pricing" className="hover:text-white transition-colors">
-                    Pricing
+                  <a href="#gallery" className="hover:text-[#dc2626] transition-colors">
+                    Photo Gallery
                   </a>
                 </li>
                 <li>
-                  <a href="#status" className="hover:text-white transition-colors">
-                    Status
+                  <a href="#trophy" className="hover:text-[#dc2626] transition-colors">
+                    Trophy Cabinet
                   </a>
                 </li>
                 <li>
-                  <a href="#webhooks" className="hover:text-white transition-colors">
-                    Webhooks
+                  <a href="#ronz-store" className="hover:text-[#dc2626] transition-colors">
+                    Ronz Store
                   </a>
                 </li>
               </ul>
@@ -174,30 +174,25 @@ export function FooterSection() {
               <div className="w-full h-2 bg-black/70 blur-[4px] rounded-[100%] mt-3 pointer-events-none" />
             </div>
 
-            {/* Column 3: Company */}
+            {/* Column 3: Connect */}
             <div className="space-y-3.5">
               <h4 className="font-semibold text-white text-xs sm:text-sm tracking-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]">
-                Company
+                Connect
               </h4>
               <ul className="space-y-2.5 text-neutral-200 font-sans drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">
                 <li>
-                  <a href="#blog" className="hover:text-white transition-colors">
-                    Blog
+                  <a href="#contact" className="hover:text-[#dc2626] transition-colors">
+                    Contact Us
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:text-white transition-colors">
-                    Contact
+                  <a href="#join" className="hover:text-[#dc2626] transition-colors">
+                    Join the Academy
                   </a>
                 </li>
                 <li>
-                  <a href="#customers" className="hover:text-white transition-colors">
-                    Customers
-                  </a>
-                </li>
-                <li>
-                  <a href="#brand" className="hover:text-white transition-colors">
-                    Brand
+                  <a href="#sponsor" className="hover:text-[#dc2626] transition-colors">
+                    Partnerships
                   </a>
                 </li>
               </ul>
@@ -212,13 +207,13 @@ export function FooterSection() {
               </h4>
               <ul className="space-y-2.5 text-neutral-200 font-sans drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">
                 <li>
-                  <a href="#privacy" className="hover:text-white transition-colors">
+                  <a href="#privacy" className="hover:text-[#dc2626] transition-colors">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#terms" className="hover:text-white transition-colors">
-                    Terms of Service
+                  <a href="#terms" className="hover:text-[#dc2626] transition-colors">
+                    Terms & Conditions
                   </a>
                 </li>
               </ul>
@@ -236,3 +231,4 @@ export function FooterSection() {
 }
 
 export default FooterSection;
+

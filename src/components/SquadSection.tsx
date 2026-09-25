@@ -28,7 +28,7 @@ export default function SquadSection() {
             <span className="font-mono text-xs font-bold tracking-widest text-brand-gold uppercase bg-brand-gold/10 px-4 py-1.5 rounded-full border border-brand-gold/20">
               FIRST TEAM ROSTER
             </span>
-            <h2 className="font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-white mt-4">
+            <h2 className="font-display text-4xl sm:text-5xl font-display font-black tracking-tight text-white mt-4">
               MEET THE CRIMSON STORM
             </h2>
             <p className="text-gray-400 mt-3 font-sans font-medium text-sm sm:text-base">
